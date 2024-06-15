@@ -1,5 +1,5 @@
 # Remote-Controlled Worker Monitoring System
-
+![Main Overview](https://github.com/EngrAwab/Robo_rumble/blob/main/img/Copy%20of%20EME.png)
 ## Overview
 The Remote-Controlled Worker Monitoring System addresses the challenges faced by subcontractors in monitoring worker safety on construction sites. Traditionally, subcontractors have had to deploy safety managers alongside working teams to ensure worker safety. This approach incurs significant costs, including hiring multiple safety officers and providing transportation to and from sites, especially when managing multiple sites simultaneously.
 
@@ -19,7 +19,8 @@ To mitigate these challenges, the following solutions have been proposed:
 3. **Remote-Controlled Car with Camera**: Implementing a remote-controlled car equipped with cameras provides a flexible and cost-effective solution. This car can be operated remotely by safety officers, who can monitor worker activities in real-time from a central location. Key features include:
    - **Remote Operation**: Safety officers can control the car's movements remotely, eliminating the need for physical presence on-site.
    - **Multiple Site Monitoring**: A single safety officer can oversee multiple sites simultaneously, reducing the need for multiple hires.
-   - **Automation Capability**:The system includes automation features where object detection algorithms are employed to monitor worker activities autonomously. A safety officer can direct the robot to a desired position, after which the robot operates as an AI-driven camera. This capability allows for continuous monitoring of workers without requiring real-time supervision by the safety officer.
+   - **Automation Capability**: The system includes automation features where object detection algorithms are employed to monitor worker activities autonomously. A safety officer can direct the robot to a desired position, after which the robot operates as an AI-driven camera. This capability allows for continuous monitoring of workers without requiring real-time supervision by the safety officer.
+
 ## Hardware Components
 
 - **Raspberry Pi 5:**
@@ -84,11 +85,12 @@ To mitigate these challenges, the following solutions have been proposed:
 - **Enhanced Safety and Efficiency:**
   - Provides continuous, automated surveillance to ensure worker safety across construction sites.
   - Improves operational efficiency by reducing physical presence requirements at each location.
-# Setup Guide for Luxonis Hub and Raspberry Pi
+
+## Setup Guide for Luxonis Hub and Raspberry Pi
 
 Follow these steps to set up and deploy your remote-controlled robotic system using Luxonis Hub and Raspberry Pi.
 
-## Step 1: Luxonis Hub Account Creation
+### Step 1: Luxonis Hub Account Creation
 
 1. **Visit Luxonis Hub:**
    - Go to [Luxonis Hub](https://luxonis.com/hub) in your web browser.
@@ -96,7 +98,7 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
 2. **Create an Account:**
    - Click on "Sign Up" or "Create Account" to register.
 
-## Step 2: Adding Your Robot to Luxonis Hub
+### Step 2: Adding Your Robot to Luxonis Hub
 
 1. **Navigate to Dashboard:**
    - Log in to Luxonis Hub with your credentials.
@@ -105,7 +107,7 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
    - Click on "Add Robot" and follow the instructions.
    - Note down the URL provided after adding the robot.
 
-## Step 3: Installation on Raspberry Pi (Linux or Raspbian)
+### Step 3: Installation on Raspberry Pi (Linux or Raspbian)
 
 1. **Open Terminal:**
    - Ensure you are on a Linux or Raspbian system (Windows is not supported).
@@ -117,7 +119,7 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
      ```
    - This command will download and install necessary packages for communication with Luxonis Hub.
 
-## Step 4: Creating an Application
+### Step 4: Creating an Application
 
 1. **Access Luxonis Hub:**
    - Log in to Luxonis Hub if not already logged in.
@@ -127,9 +129,9 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
    - Click on "Create New Application".
 
 3. **Choose Template:**
-   - Select the appropriate template for your project needs .
+   - Select the appropriate template for your project needs.
 
-## Step 5: Uploading and Managing Code
+### Step 5: Uploading and Managing Code
 
 1. **Courses Tab:**
    - Navigate to the "Courses" tab in Luxonis Hub.
@@ -138,8 +140,7 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
    - Download the provided project code.
    - Upload your project code to Luxonis Hub using the interface provided.
 
-
-## Step 6: Installing and Running the Application on Robot
+### Step 6: Installing and Running the Application on Robot
 
 1. **Install Application:**
    - On Luxonis Hub, go to your robot's dashboard.
@@ -151,7 +152,7 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
    - After installation, click on "Run" to start running the application on your robot.
    - This process may take some time depending on the complexity of your application.
 
-## Step 7: Assigning Device and Frontend Control
+### Step 7: Assigning Device and Frontend Control
 
 1. **Assign Device:**
    - Ensure the device assigned to the application has a mono camera.
@@ -167,3 +168,14 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
 - **Documentation:** Refer to Luxonis Hub documentation and support for troubleshooting and advanced configurations.
 
 By following these steps, you can effectively set up and deploy your remote-controlled robotic system using Luxonis Hub and Raspberry Pi.
+
+## Screenshots
+
+### Luxonis Hub Dashboard
+![Luxonis Hub Dashboard](https://github.com/EngrAwab/Robo_rumble/blob/main/img/Hub-1.png)
+
+### Assigning Camera
+![Assigning Camera](https://github.com/EngrAwab/Robo_rumble/blob/main/img/Reassign%20.png)
+
+### Main User Interface
+![Remote Control Interface](https://github.com/EngrAwab/Robo_rumble/blob/main/img/interface.png)
