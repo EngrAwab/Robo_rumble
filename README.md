@@ -7,7 +7,6 @@ The Remote-Controlled Worker Monitoring System addresses the challenges faced by
 The main issues faced by subcontractors include:
 - High costs associated with hiring and deploying safety officers to each construction site.
 - Challenges in monitoring worker safety effectively across multiple sites simultaneously.
-- Wear and tear and logistical challenges associated with temporary camera installations.
 
 ## Proposed Solutions
 To mitigate these challenges, the following solutions have been proposed:
@@ -37,7 +36,7 @@ To mitigate these challenges, the following solutions have been proposed:
 
 ## Software and Libraries
 
-- **Operating System:** Raspbian OS (or Raspberry Pi OS) optimized for Raspberry Pi architecture.
+- **Operating System:** Raspbian OS 64-bit.
   
 - **Programming Language:** Python, utilized for control scripts and application development.
   
@@ -58,7 +57,7 @@ To mitigate these challenges, the following solutions have been proposed:
 
 2. **Remote Control via Luxonis Hub:**
    - Safety officers can remotely control the robot's movement and functions through Luxonis Hub's web interface.
-   - Commands include directing the robot to specific locations, adjusting camera angles, and activating object tracking.
+   - Commands include directing the robot to specific locations, adjusting camera angles, and activating object detection model.
 
 3. **Integration with Motors:**
    - Raspberry Pi GPIO pins interface with motor drivers to control DC motors for movement and servo motors for camera pan-tilt or other functions.
@@ -86,7 +85,36 @@ To mitigate these challenges, the following solutions have been proposed:
   - Provides continuous, automated surveillance to ensure worker safety across construction sites.
   - Improves operational efficiency by reducing physical presence requirements at each location.
 
-## Setup Guide for Luxonis Hub and Raspberry Pi
+## Future Advancements
+
+We envision several future advancements for our Remote-Controlled Worker Monitoring System to further enhance its capabilities:
+
+### Drone Integration
+1. **Worker Monitoring at Height:**
+   - We plan to equip the remote-controlled car with drones that can be deployed to monitor workers at height. This will provide a comprehensive view of the construction site and ensure worker safety from multiple perspectives.
+
+2. **Quality Inspection:**
+   - The drones will also perform quality inspections from elevated positions, ensuring that construction work meets safety and quality standards.
+
+### Transition to Kria KR260
+1. **Kria KR260 Integration:**
+   - We will replace the Raspberry Pi with the more powerful Kria KR260. This upgrade will provide enhanced processing capabilities and allow for more complex AI model inferences.
+
+2. **AI Model Inference:**
+   - Using the Kria KR260, AI models will be run more efficiently for real-time object detection and analysis.
+
+3. **Video Feed Handling:**
+   - The video feeds from the drones and on-ground cameras will be sent to the Kria KR260 for processing. The processed video will then be sent to the OAK-D Lite camera, which will convert it to H.264 format and send it to the Luxonis Hub.
+
+### Advanced Drone Usage
+1. **OAK-D Pro Equipped Drones:**
+   - In addition to the small drones carried by the remote-controlled car, we plan to use larger drones equipped with OAK-D Pro cameras. These drones will perform on-board quality inspections and send data directly to the Luxonis Hub for real-time monitoring and analysis.
+
+These advancements will significantly enhance the monitoring and inspection capabilities of the system, providing more robust and comprehensive surveillance of construction sites.
+
+
+
+## Setup Guide to Deploy app on Luxonis Hub using Raspberry Pi
 
 Follow these steps to set up and deploy your remote-controlled robotic system using Luxonis Hub and Raspberry Pi.
 
@@ -110,12 +138,12 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
 ### Step 3: Installation on Raspberry Pi (Linux or Raspbian)
 
 1. **Open Terminal:**
-   - Ensure you are on a Linux or Raspbian system (Windows is not supported).
+   - Ensure you are on a Linux or Raspbian system.
 
 2. **Execute Installation URL:**
    - Run the installation command provided by Luxonis Hub.
      ```bash
-     curl -sL <installation_url_from_step_2> | sudo -E bash -
+     curl -sL your URL
      ```
    - This command will download and install necessary packages for communication with Luxonis Hub.
 
@@ -125,16 +153,16 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
    - Log in to Luxonis Hub if not already logged in.
 
 2. **Create New Application:**
-   - Navigate to the "Applications" section.
-   - Click on "Create New Application".
+   - Navigate to the "Apps" section.
+   - Click on "+ Create App".
 
 3. **Choose Template:**
    - Select the appropriate template for your project needs.
 
 ### Step 5: Uploading and Managing Code
-
-1. **Courses Tab:**
-   - Navigate to the "Courses" tab in Luxonis Hub.
+After Creating app click on the app and then follow following steps:
+1. **Sourse Tab:**
+   - Navigate to the "ourse" tab in App.
 
 2. **Download and Upload Code:**
    - Download the provided project code.
@@ -179,3 +207,17 @@ By following these steps, you can effectively set up and deploy your remote-cont
 
 ### Main User Interface
 ![Remote Control Interface](https://github.com/EngrAwab/Robo_rumble/blob/main/img/interface.png)
+
+## Achievements
+
+We are proud to announce that our project has won 1st prize in a prestigious competition held at the top university in our country, NUST. This recognition highlights the effectiveness and innovation of our Luxonis Hub remote monitoring system and the OAK-D equipped car.
+
+### Award Highlights
+- **1st Prize at NUST:** Our project was recognized for its excellence in utilizing cutting-edge technology to ensure worker safety and operational efficiency on construction sites.
+
+### Photos
+![Award Ceremony](https://github.com/EngrAwab/Robo_rumble/blob/main/img/win.png)
+![Project Demonstration](https://github.com/EngrAwab/Robo_rumble/blob/main/img/Stall.jpg)
+
+These achievements underscore the potential impact of our solution in revolutionizing worker monitoring and safety management in the construction industry.
+
