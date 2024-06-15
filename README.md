@@ -206,7 +206,7 @@ By following these steps, you can effectively set up and deploy your remote-cont
 ![Assigning Camera](https://github.com/EngrAwab/Robo_rumble/blob/main/img/Reassign%20.png)
 
 ### Main User Interface
-![Remote Control Interface](https://github.com/EngrAwab/Robo_rumble/blob/main/img/interface.png)
+![Remote Control Interface](https://github.com/EngrAwab/Robo_rumble/blob/main/img/inter.png)
 
 ## Achievements
 
