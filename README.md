@@ -1,14 +1,20 @@
 # Remote-Controlled Worker Monitoring System
+
 ![Main Overview](https://github.com/EngrAwab/Robo_rumble/blob/main/img/Copy%20of%20EME.png)
+
 ## Overview
+
 The Remote-Controlled Worker Monitoring System addresses the challenges faced by subcontractors in monitoring worker safety on construction sites. Traditionally, subcontractors have had to deploy safety managers alongside working teams to ensure worker safety. This approach incurs significant costs, including hiring multiple safety officers and providing transportation to and from sites, especially when managing multiple sites simultaneously.
 
 ## Problem Statement
+
 The main issues faced by subcontractors include:
+
 - High costs associated with hiring and deploying safety officers to each construction site.
 - Challenges in monitoring worker safety effectively across multiple sites simultaneously.
 
 ## Proposed Solutions
+
 To mitigate these challenges, the following solutions have been proposed:
 
 1. **Permanent Camera Installation**: Installing cameras permanently on-site ensures continuous monitoring of worker activities. However, this solution is costly and often not financially feasible for subcontractors.
@@ -16,6 +22,7 @@ To mitigate these challenges, the following solutions have been proposed:
 2. **Temporary Camera Installation**: Deploying cameras temporarily during active construction periods allows for monitoring while work is ongoing. However, temporary installations are prone to wear and tear and can be logistically challenging.
 
 3. **Remote-Controlled Car with Camera**: Implementing a remote-controlled car equipped with cameras provides a flexible and cost-effective solution. This car can be operated remotely by safety officers, who can monitor worker activities in real-time from a central location. Key features include:
+
    - **Remote Operation**: Safety officers can control the car's movements remotely, eliminating the need for physical presence on-site.
    - **Multiple Site Monitoring**: A single safety officer can oversee multiple sites simultaneously, reducing the need for multiple hires.
    - **Automation Capability**: The system includes automation features where object detection algorithms are employed to monitor worker activities autonomously. A safety officer can direct the robot to a desired position, after which the robot operates as an AI-driven camera. This capability allows for continuous monitoring of workers without requiring real-time supervision by the safety officer.
@@ -90,6 +97,7 @@ To mitigate these challenges, the following solutions have been proposed:
 We envision several future advancements for our Remote-Controlled Worker Monitoring System to further enhance its capabilities:
 
 ### Drone Integration
+
 1. **Worker Monitoring at Height:**
    - We plan to equip the remote-controlled car with drones that can be deployed to monitor workers at height. This will provide a comprehensive view of the construction site and ensure worker safety from multiple perspectives.
 
@@ -97,6 +105,7 @@ We envision several future advancements for our Remote-Controlled Worker Monitor
    - The drones will also perform quality inspections from elevated positions, ensuring that construction work meets safety and quality standards.
 
 ### Transition to Kria KR260
+
 1. **Kria KR260 Integration:**
    - We will replace the Raspberry Pi with the more powerful Kria KR260. This upgrade will provide enhanced processing capabilities and allow for more complex AI model inferences.
 
@@ -107,12 +116,11 @@ We envision several future advancements for our Remote-Controlled Worker Monitor
    - The video feeds from the drones and on-ground cameras will be sent to the Kria KR260 for processing. The processed video will then be sent to the OAK-D Lite camera, which will convert it to H.264 format and send it to the Luxonis Hub.
 
 ### Advanced Drone Usage
+
 1. **OAK-D Pro Equipped Drones:**
    - In addition to the small drones carried by the remote-controlled car, we plan to use larger drones equipped with OAK-D Pro cameras. These drones will perform on-board quality inspections and send data directly to the Luxonis Hub for real-time monitoring and analysis.
 
 These advancements will significantly enhance the monitoring and inspection capabilities of the system, providing more robust and comprehensive surveillance of construction sites.
-
-
 
 ## Setup Guide to Deploy app on Luxonis Hub using Raspberry Pi
 
@@ -160,9 +168,9 @@ Follow these steps to set up and deploy your remote-controlled robotic system us
    - Select the appropriate template for your project needs.
 
 ### Step 5: Uploading and Managing Code
-After Creating app click on the app and then follow following steps:
-1. **Sourse Tab:**
-   - Navigate to the "ourse" tab in App.
+
+1. **Source Tab:**
+   - Navigate to the "Source" tab in the App.
 
 2. **Download and Upload Code:**
    - Download the provided project code.
