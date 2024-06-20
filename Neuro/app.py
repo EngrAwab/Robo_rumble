@@ -4,7 +4,7 @@ import time
 import depthai as dai
 import object_detector_config as nn_config
 import robothub as rh
-
+import car_serial as car
 # [business logic]
 class BusinessLogic:
     def __init__(self, frame_buffer: rh.FrameBuffer, live_view: rh.DepthaiLiveView, mono_right_view: rh.DepthaiLiveView, mono_left_view: rh.DepthaiLiveView):
