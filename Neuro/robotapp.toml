@@ -1,0 +1,49 @@
+config_version = "2.0"
+
+[info]
+name = "appli"
+description = "This is a generated description. Replace it with your own."
+
+[runtime]
+application = "app.py#Application"
+workdir = "/app"
+permissions = ["gpio"]
+
+[runtime.runs_on]
+type = "image"
+name = "ghcr.io/luxonis/robothub-app-v2:2024.117.2129-rvc2-regular"
+
+[[configuration]]
+visual = "section"
+title = "Camera config"
+
+[[configuration]]
+key = "fps"
+label = "FPS"
+field = "num_range"
+step = 1
+min = 1
+max = 30
+initial_value = 20
+
+[[configuration]]
+visual = "section"
+title = "Upload intervals"
+
+[[configuration]]
+key = "image_event_upload_interval_minutes"
+label = "Image event upload interval (minutes)"
+field = "num_range"
+step = 1
+min = 1
+max = 60
+initial_value = 1
+
+[[configuration]]
+key = "video_event_upload_interval_minutes"
+label = "Video event upload interval (minutes)"
+field = "num_range"
+step = 1
+min = 1
+max = 60
+initial_value = 5
