@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+.logo-container {
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+background: linear-gradient(to right, red, yellow);
+}
+
+.screen-container {
+display: flex;
+justify-content: space-between; /* Space screens evenly */
+}
+
+.screen {
+width: 300px;
+height: 200px;
+border: 1px solid #ddd;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.button-container {
+display: flex;
+justify-content: center; /* Center the button */
+margin-top: 10px; /* Add spacing between screens and buttons */
+}
+
+.button {
+text-align: center;
+padding: 10px 20px; /* Adjust button padding */
+border: 1px solid #62ff42; /* Add button border */
+cursor: pointer; /* Indicate clickable button */
+}
+
+.control-panel {
+display: flex; /* Arrange control groups horizontally */
+justify-content: space-between; /* Space control groups */
+margin-top: 20px; /* Add spacing between buttons and controls */
+}
+
+.control {
+width: 80px; /* Adjust control button width */
+border: 1px solid ; /* Add border for controls */
+height: 80px; /* Adjust control button height */
+background-color: #ff9100;
+margin: 5px; /* Add spacing between control buttons */
+font-size: 18px; /* Adjust font size for control labels */
+cursor: pointer; /* Indicate clickable controls */
+border-radius: 50%; /* Rounded corners for all controls */
+color: white;
+}
+
+.control.up {
+/* Adjust top border radius for a flat top */
+margin-left: 75px;
+margin-right: 75px;
+border-radius: 50% 50% 0 0;
+justify-content: center;
+}
+
+.control.left {  
+margin-right: 50px;
+justify-content: left;
+}
+
+.control.right {  
+margin-left: 5px;
+justify-content: right;
+}
+
+.control.down {
+/* Adjust bottom border radius for a flat bottom */
+margin-left: 75px;
+margin-right: 75px;
+border-radius: 0 0 50% 50%;
+justify-content: center;
+}
+
+/* Optional hover effects for a nicer visual experience */
+.control:hover {
+background-color: #ff0d0d; /* Add a subtle background color on hover */
+}
+
+.button-box {
+border: 2px solid #000;
+padding: 10px;
+display: inline-block;
+}
