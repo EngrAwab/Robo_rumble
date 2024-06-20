@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Live View</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Assuming basic styling is still desired -->
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+</head>
+<body>
+  <div class="logo-container">
+    <img src="er-removebg-preview.png" alt="Logo" class="logo">
+</div>
+  <br>
+  <label for="fruits">Choose a Model:</label>
+    <select id="fruits" name="fruits">
+        <option value="Cone">Safety Cone Detection</option>
+        <option value="Fall">Fall Detection</option>
+        <option value="Fire">Fire Detetction</option>
+    </select>
+
+  <div class="screen-container">
+    <div class="screen">
+      <div>
+        <br>
+        <h1>Mono Left View</h1>
+        <rh-video id="left-mono" stream-key="mono_left_stream"></rh-video> <!-- Live view component -->
+      </div>
+    </div>
+    <div class="screen">
+      <div>
+        <h1>RGB Stream View</h1>
+        <rh-video id="rgb" stream-key="color_stream"></rh-video> <!-- Live view component -->
+      </div>
+    </div>
+    <div class="screen">
+      <div>
+        <h1>Mono Right View</h1>
+        <rh-video id="right-mono" stream-key="mono_right_stream"></rh-video> <!-- Live view component -->
+      </div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button id="rgb-bt" type="button">Save Picture (RGB)</button>
+  </div>
+
+  <div class="control-panel">
+    <div class="button-box car-control">
+      <h3>CAR CONTROL</h3>
+      <br>
+        <div>
+            <button class="control up">Up</button>
+        </div>
+        <div>
+            <button class="control left">Left</button>
+            <button class="control right">Right</button>
+        </div>
+        <div>
+            <button class="control down">Down</button>
+        </div>
+    </div>
+
+    <div class="button-box gimbal-control">
+      <h3>GIMBLE CONTROL</h3>
+      <br>
+        <div>
+            <button class="control up">Up</button>
+        </div>
+        <div>
+            <button class="control left">Left</button>
+            <button class="control right">Right</button>
+        </div>
+        <div>
+            <button class="control down">Down</button>
+        </div>
+    </div>
+  </div>
+<script src="./simplified.js"></script>
+</body>
+</html>
